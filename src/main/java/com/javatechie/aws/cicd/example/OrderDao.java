@@ -1,13 +1,13 @@
 package com.javatechie.aws.cicd.example;
 
 import org.springframework.stereotype.Repository;
-
+import com.javatechie.aws.cicd.example.Order;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Repository
-public class OrderDao {
+public class OrderDao {	
 
 
     public List<Order> getOrders() {
@@ -19,3 +19,4 @@ public class OrderDao {
                 .collect(Collectors.toList());
     }
 }
+					
